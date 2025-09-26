@@ -6,6 +6,9 @@ body {
     font-weight: 300;
     letter-spacing: .025rem;
     color: #494949;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -30,7 +33,7 @@ img {
 
 .about-section {
     width: 100%;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .left-header {
@@ -38,7 +41,7 @@ img {
     top: 0;
     left: 0;
     color: #fff;
-    height: 100vh;
+    /*height: 100vh;*/
     width: 100%;
     max-width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('https://source.unsplash.com/4kkYkFNfJV8/706x900');
@@ -89,7 +92,7 @@ img {
 
 .about-data::before {
     position: absolute;
-    content: '\003c/ ABOUT \003e';
+    /*content: '\003c/ ABOUT \003e';*/
     top: 0;
     left: 50%;
     transform: translate(-50%, -60%);
@@ -117,16 +120,4 @@ img {
 
 .icon-18 {
     font-size: 1.8rem;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .left-header::before {
-        width: 70%;
-    }
-}
-
-@media (min-height: 590px) {
-    .left-header::after {
-        height: 85%;
-    }
 }
