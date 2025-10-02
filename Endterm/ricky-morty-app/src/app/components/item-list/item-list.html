@@ -1,0 +1,87 @@
+<div class="container">
+  <h2>Browse Characters</h2>
+
+  <!-- Поисковая строка -->
+  <div class="search-container">
+    <input
+      [formControl]="searchControl"
+      placeholder="Search..."
+      class="search-input">  </div>
+
+
+  <!-- Индикатор загрузки -->
+  <div *ngIf="isLoading" class="loading">
+    <p>Loading characters...</p>
+  </div>
+
+  <!-- Сообщение об ошибке -->
+  <div *ngIf="errorMessage && !isLoading" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <!-- Сетка персонажей -->
+  <div class="grid" *ngIf="!isLoading">
+    <div
+      *ngFor="let char of characters"
+      class="card"
+      [routerLink]="['/characters', char.id]"
+    >
+      <img [src]="char.image" [alt]="char.name">
+      <h3>{{ char.name }}</h3>
+      <p>{{ char.species }} - {{ char.status }}</p>
+    </div>
+  </div>
+
+  <div class="pagination" *ngIf="!isLoading && characters.length > 0">
+    <button
+      (click)="previousPage()"
+      [disabled]="currentPage === 1"
+      class="btn-page control-btn"
+    >
+      ← Previous
+    </button>
+
+    <div class="page-numbers">
+      <button *ngIf="visiblePages[0] > 1" (click)="goToPage(1)" class="btn-page-number">1</button>
+      <span *ngIf="visiblePages[0] > 1">...</span>
+
+      <button
+        *ngFor="let page of visiblePages"
+        (click)="goToPage(page)"
+        [class.active]="currentPage === page"
+        class="btn-page-number"
+      >
+        {{ page }}
+      </button>
+
+      <span *ngIf="visiblePages[visiblePages.length - 1] < totalPages">...</span>
+      <button
+        *ngIf="visiblePages[visiblePages.length - 1] < totalPages"
+        (click)="goToPage(totalPages)"
+        class="btn-page-number"
+      >
+        {{ totalPages }}
+      </button>
+
+    </div>
+
+    <button
+      (click)="nextPage()"
+      [disabled]="currentPage === totalPages"
+      class="btn-page control-btn"
+    >
+      Next →
+    </button>
+  </div>
+
+  <div class="page-info" *ngIf="!isLoading && characters.length > 0">
+    Page {{ currentPage }} of {{ totalPages }}
+  </div>
+
+
+  <!-- Если нет результатов -->
+  <div *ngIf="!isLoading && characters.length === 0 && !errorMessage" class="no-results">
+    <p>No characters found. Try a different search.</p>
+  </div>
+
+</div>

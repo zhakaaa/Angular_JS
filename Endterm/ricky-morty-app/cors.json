@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost:4200", "https://your-deployed-app.com"],
+    "method": ["GET", "POST", "PUT"],
+    "maxAgeSeconds": 3600,
+    "responseHeader": ["Content-Type", "Authorization"]
+  }
+]

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="header">
+    <h2>⭐ My Favorite Characters</h2>
+    <button
+      *ngIf="!isLoading && favorites.length > 0"
+      (click)="clearAllFavorites()"
+      class="btn-clear-all"
+    >
+      🗑️ Clear All
+    </button>
+  </div>
+
+  <!-- Статус -->
+  <div class="status-message">
+    <span class="status-icon">💾</span>
+    Your favorites are saved locally in your browser
+  </div>
+
+  <!-- Загрузка -->
+  <div *ngIf="isLoading" class="loading-message">
+    <div class="spinner"></div>
+    <p>Loading favorites...</p>
+  </div>
+
+  <!-- Пустое состояние -->
+  <div *ngIf="!isLoading && favorites.length === 0" class="empty-message">
+    <span class="empty-icon">📭</span>
+    <h3>No favorites yet</h3>
+    <p>Start exploring characters and add them to your favorites!</p>
+    <a routerLink="/characters" class="btn-browse">Browse Characters</a>
+  </div>
+
+  <!-- Сетка избранных (КАК В ITEM-LIST) -->
+  <div class="grid" *ngIf="!isLoading && favorites.length > 0">
+    <div
+      *ngFor="let char of favorites"
+      class="card"
+      [routerLink]="['/characters', char.id]"
+    >
+      <img [src]="char.image" [alt]="char.name">
+      <div class="card-content">
+        <h3>{{ char.name }}</h3>
+        <p class="info">{{ char.species }} - {{ char.status }}</p>
+        <button
+          (click)="removeFromFavorites(char.id, $event)"
+          class="btn-remove"
+        >
+          ❌ Remove
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Счетчик -->
+  <div *ngIf="!isLoading && favorites.length > 0" class="counter">
+    Total favorites: <strong>{{ favorites.length }}</strong>
+  </div>
+</div>

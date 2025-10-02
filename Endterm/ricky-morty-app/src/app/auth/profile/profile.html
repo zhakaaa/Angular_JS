@@ -1,0 +1,79 @@
+<div class="profile-container">
+  <!-- Loading State -->
+  <div *ngIf="isLoading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading profile...</p>
+  </div>
+
+  <!-- Profile Content -->
+  <div *ngIf="!isLoading && currentUser" class="profile-content">
+
+    <!-- Header -->
+    <div class="profile-header">
+      <div class="avatar-section">
+        <img
+          [src]="userProfile?.photoURL || 'https://ui-avatars.com/api/?name=' + (currentUser.email || 'User') + '&size=200&background=667eea&color=fff'"
+          alt="Profile Picture"
+          class="avatar"
+          (error)="onImageError($event)"
+        >
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+          <label for="avatar-upload" class="upload-label">
+            {{ isUploading ? uploadProgress : '📷 Change Avatar' }}
+          </label>
+          <input
+            type="file"
+            id="avatar-upload"
+            accept="image/jpeg,image/png"
+            (change)="handleImage($event)"
+            [disabled]="isUploading"
+            class="file-input"
+          >
+          <p class="upload-hint">JPG or PNG, max 5MB</p>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <h1>{{ currentUser.email }}</h1>
+        <p class="user-id">UID: {{ currentUser.uid }}</p>
+        <p class="member-since" *ngIf="userProfile?.createdAt">
+          Member since: {{ userProfile.createdAt.toDate() | date:'mediumDate' }}
+        </p>
+
+        <button (click)="handleLogout()" class="btn-logout">
+          🚪 Logout
+        </button>
+      </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div class="favorites-section">
+      <div class="section-header">
+        <h2>⭐ Your Favorite Characters</h2>
+        <a routerLink="/favorites" class="view-all-link">View All →</a>
+      </div>
+
+      <div *ngIf="favoriteCharacters.length === 0" class="no-favorites">
+        <p>You haven't added any favorites yet!</p>
+        <a routerLink="/characters" class="btn-browse">Browse Characters</a>
+      </div>
+
+      <div *ngIf="favoriteCharacters.length > 0" class="favorites-grid">
+        <div
+          *ngFor="let char of favoriteCharacters"
+          class="char-card"
+          [routerLink]="['/characters', char.id]"
+        >
+          <img [src]="char.image" [alt]="char.name">
+          <div class="char-info">
+            <h3>{{ char.name }}</h3>
+            <p>{{ char.species }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

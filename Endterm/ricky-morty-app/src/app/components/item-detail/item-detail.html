@@ -1,0 +1,58 @@
+<div class="details-container">
+  <!-- Загрузка -->
+  <div *ngIf="isLoading" class="loading">
+    <p>Loading character details...</p>
+  </div>
+
+  <!-- Ошибка -->
+  <div *ngIf="errorMessage && !isLoading" class="error">
+    <p>{{ errorMessage }}</p>
+    <button (click)="goBack()" class="btn-back">← Back to Characters</button>
+  </div>
+
+  <!-- Детали персонажа -->
+  <div *ngIf="character && !isLoading" class="character-details">
+    <button (click)="goBack()" class="btn-back">← Back</button>
+
+    <div class="details-card">
+      <img [src]="character.image" [alt]="character.name" class="character-image">
+
+      <div class="character-info">
+        <h1>{{ character.name }}</h1>
+
+        <div class="info-row">
+          <span class="label">Status:</span>
+          <span class="value" [class.alive]="character.status === 'Alive'"
+                [class.dead]="character.status === 'Dead'">
+            {{ character.status }}
+          </span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Species:</span>
+          <span class="value">{{ character.species }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Gender:</span>
+          <span class="value">{{ character.gender }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Location:</span>
+          <span class="value">{{ character.location.name }}</span>
+        </div>
+
+        <button
+          (click)="toggleFavorite()"
+          class="btn-favorite"
+          [class.active]="isFavorite"
+        >
+          <span class="icon">{{ isFavorite ? '❤️' : '🤍' }}</span>
+          {{ isFavorite ? 'Remove from Favorites' : 'Add to Favorites' }}
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>

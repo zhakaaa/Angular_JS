@@ -1,0 +1,9 @@
+<!--<div class="offline-banner" *ngIf="(networkService.onlineStatus$ | async) === false">-->
+<!--  <span role="img" aria-label="Warning">⚠️</span>-->
+<!--  You are currently offline. Displaying cached data.-->
+<!--</div>-->
+
+<div *ngIf="!isOnline" class="offline-banner">
+  <span class="icon">📡</span>
+  <span class="message">You are offline.</span>
+</div>

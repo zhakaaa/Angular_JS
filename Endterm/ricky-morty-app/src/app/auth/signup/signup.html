@@ -1,0 +1,64 @@
+<div class="auth-container">
+  <div class="auth-header">
+    <div class="auth-logo">🛸</div>
+    <h1 class="auth-title">Rick & Morty Hub</h1>
+    <p class="auth-subtitle">Join the multiverse adventure!</p>
+  </div>
+
+  <form (ngSubmit)="onSignup()">
+    <!-- Email -->
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input
+        type="email"
+        class="form-input"
+        [(ngModel)]="email"
+        name="email"
+        placeholder="Enter your email"
+        (blur)="validateEmail()"
+        required
+      >
+      <span class="error-message" *ngIf="emailError">{{ emailError }}</span>
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        class="form-input"
+        [(ngModel)]="password"
+        name="password"
+        placeholder="Create a password"
+        (blur)="validatePassword()"
+        required
+      >
+      <span class="password-toggle" (click)="showPassword = !showPassword">👁️</span>
+      <span class="error-message" *ngIf="passwordError">{{ passwordError }}</span>
+      <span class="hint-message">Must be 8+ characters with one number and one special character</span>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="form-group">
+      <label class="form-label">Confirm Password</label>
+      <input
+        [type]="showConfirmPassword ? 'text' : 'password'"
+        class="form-input"
+        [(ngModel)]="confirmPassword"
+        name="confirmPassword"
+        placeholder="Confirm your password"
+        (blur)="validateConfirmPassword()"
+        required
+      >
+      <span class="password-toggle" (click)="showConfirmPassword = !showConfirmPassword">👁️</span>
+      <span class="error-message" *ngIf="confirmPasswordError">{{ confirmPasswordError }}</span>
+    </div>
+
+    <button type="submit" class="btn-submit">Create Account</button>
+  </form>
+
+  <div class="auth-footer">
+    Already have an account?
+    <a routerLink="/login" class="auth-link">Log In</a>
+  </div>
+</div>

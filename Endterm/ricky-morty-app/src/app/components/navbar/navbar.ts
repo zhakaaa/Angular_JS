@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+import {AuthService} from '../../services/auth.service';
+import {MatToolbar} from '@angular/material/toolbar';
+import { AsyncPipe, NgIf } from '@angular/common';
+import {Router, RouterLink, RouterLinkActive} from "@angular/router";
+
+@Component({
+  selector: 'app-navbar',
+  imports: [
+    RouterLinkActive,
+    RouterLink,
+    AsyncPipe,
+    NgIf
+  ],
+  templateUrl: './navbar.html',
+  styleUrl: './navbar.css',
+})
+export class Navbar {
+  constructor(public authService: AuthService, private router: Router) {}
+
+  handleLogout() {
+    this.authService.logout();
+  }
+
+}

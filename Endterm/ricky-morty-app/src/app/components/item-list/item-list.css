@@ -1,0 +1,115 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.card {
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out,
+  box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img { width: 100%; border-radius: 8px; }
+
+.search-input {
+  width: 100%;
+  /*max-width: 200px; !* **Ограничиваем максимальную ширину** *!*/
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.loading, .error-message, .no-results {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #a8b2d1;
+}
+
+.error-message {
+  color: #f44336;
+}
+
+.container{
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+h2, h3, p{
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: transform 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.btn-page {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-page:disabled {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+}
+
+.btn-page:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.page-numbers {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-page-number {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-page-number.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+}
+
+.btn-page-number:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.page-info {
+  text-align: center;
+  margin-top: 15px;
+  color: #a8b2d1;
+  font-size: 14px;
+}

@@ -1,0 +1,25 @@
+<div class="item-card">
+  <div class="item-image-wrapper">
+
+    <img
+      [src]="posterUrl"
+      [alt]="item.title"
+      class="item-image"
+    />
+  </div>
+
+  <div class="item-body">
+    <h3 class="item-title">{{item.title}}</h3>
+    <p class="item-description">
+      {{ item.year }} • {{ item.type | titlecase }}
+    </p>
+
+    <a
+      class="details-btn"
+      type="button"
+      [routerLink]="['/items', item.id]">
+        View Details
+    </a>
+
+  </div>
+</div>

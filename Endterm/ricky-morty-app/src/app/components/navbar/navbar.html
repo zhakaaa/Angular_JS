@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="logo" routerLink="/">Rick & Morty Hub 🛸</div>
+
+  <div class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+
+    <a routerLink="/favorites" routerLinkActive="active">Favorites</a>
+    <a routerLink="/profile" routerLinkActive="active">Profile</a>
+
+    <ng-container *ngIf="authService.user$ | async as currentUser; else guestTemplate">
+      <a routerLink="/characters" routerLinkActive="active">Browse</a>
+
+      <span class="user-info">{{ currentUser.email }}</span>
+
+      <button (click)="handleLogout()" class="btn-logout">Logout</button>
+    </ng-container>
+
+    <ng-template #guestTemplate>
+      <a routerLink="/login" routerLinkActive="active">Log In</a>
+      <a routerLink="/signup" class="btn-signup">Sign Up</a>
+    </ng-template>
+
+  </div>
+</nav>
+

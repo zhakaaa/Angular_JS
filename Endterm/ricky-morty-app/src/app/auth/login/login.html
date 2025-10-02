@@ -1,0 +1,30 @@
+<body>
+<div class="auth-container">
+  <div class="auth-header">
+    <div class="auth-logo">🛸</div>
+    <h1 class="auth-title">Rick & Morty Hub</h1>
+    <p class="auth-subtitle">Welcome back, traveler!</p>
+  </div>
+
+  <form (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <label class="form-label">Email Address</label>
+      <input type="email" class="form-input" [(ngModel)]="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input [type]="showPassword ? 'text' : 'password'" class="form-input" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
+      <span class="password-toggle" (click)="showPassword = !showPassword">👁️</span>
+    </div>
+
+    <button type="submit" class="btn-submit">Log In</button>
+
+  </form>
+
+  <div class="auth-footer">
+    Don't have an account?
+    <a routerLink="/signup" class="auth-link">Sign Up</a>
+  </div>
+</div>
+</body>
