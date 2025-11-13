@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7c7b3a7-ef3b-4430-95be-c1e6fd1e08af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Midterm Project/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/.idea/Midterm Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/app.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/categories/categories.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/categories/categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/categories/categories.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/categories/categories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/search/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/search/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/search/search.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/search/search.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/services/meal.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/app/services/meal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Midterm Project/meal-categories-app/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first homework/.idea/first homework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first homework/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first homework/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first homework/src/exercises/02_precedence_associativity/starter.js" beforeDir="false" afterPath="$PROJECT_DIR$/first homework/src/exercises/02_precedence_associativity/starter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first homework/src/exercises/03_functions_closures/starter.js" beforeDir="false" afterPath="$PROJECT_DIR$/first homework/src/exercises/03_functions_closures/starter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/first homework/src/exercises/04_destructuring_spread_rest/starter.js" beforeDir="false" afterPath="$PROJECT_DIR$/first homework/src/exercises/04_destructuring_spread_rest/starter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/second hw/a2_promises.js" beforeDir="false" afterPath="$PROJECT_DIR$/second hw/a2_promises.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/01_primitives_vs_references/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/01_primitives_vs_references/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/01_primitives_vs_references/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/02_precedence_associativity/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/02_precedence_associativity/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/02_precedence_associativity/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/02_precedence_associativity/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/03_functions_closures/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/03_functions_closures/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/03_functions_closures/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/04_destructuring_spread_rest/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/04_destructuring_spread_rest/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/04_destructuring_spread_rest/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/05_arrays_typedarrays/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/05_arrays_typedarrays/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/05_arrays_typedarrays/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/_shared/assert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/exercises/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/first homework/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.css" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.html" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/app/about-me/about-me.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/app/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/my-angular-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/third hw/my-angular-app/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/.idea/second hw.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/a1_prototypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/a2_promises.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/a3_event_loop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/about_us/asset/jpeg-56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/about_us/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/about_us/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/01_primitives_vs_references/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/01_primitives_vs_references/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/01_primitives_vs_references/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/02_precedence_associativity/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/02_precedence_associativity/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/02_precedence_associativity/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/02_precedence_associativity/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/03_functions_closures/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/03_functions_closures/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/03_functions_closures/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/04_destructuring_spread_rest/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/04_destructuring_spread_rest/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/04_destructuring_spread_rest/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/05_arrays_typedarrays/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/05_arrays_typedarrays/solution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/05_arrays_typedarrays/starter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/_shared/assert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/exercises/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/third hw/second hw/src/styles.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="34RKsSz98ugrvIrnjgsyp8QeXbx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7c7b3a7-ef3b-4430-95be-c1e6fd1e08af" name="Changes" comment="" />
+      <created>1761171151060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761171151060</updated>
+      <workItem from="1761171152170" duration="782000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
