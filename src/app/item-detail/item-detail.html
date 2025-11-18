@@ -1,0 +1,45 @@
+<div class="item-details-page">
+  <button class="back-btn" type="button" (click)="goBack()">
+    ← Back
+  </button>
+
+  <div *ngIf="loading" class="state state-loading">
+    Loading item details...
+  </div>
+
+  <div *ngIf="error" class="state state-error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="notFound" class="state state-notfound">
+    Item not found.
+  </div>
+
+  <div
+    *ngIf="!loading && !error && !notFound && item"
+    class="item-details"
+  >
+    <div class="item-image-wrapper">
+      <img
+        [src]="item.thumbnail"
+        [alt]="item.title"
+        class="item-image"
+      />
+    </div>
+
+    <div class="item-info">
+      <h1>{{ item.title }}</h1>
+
+      <p class="item-description">
+        {{ item.description }}
+      </p>
+
+      <div class="item-meta">
+        <p><strong>ID:</strong> {{ item.id }}</p>
+        <p><strong>Category:</strong> {{ item.category }}</p>
+        <p><strong>Price:</strong> ${{ item.price }}</p>
+        <p><strong>Rating:</strong> ⭐ {{ item.rating }}</p>
+      </div>
+    </div>
+  </div>
+</div>
