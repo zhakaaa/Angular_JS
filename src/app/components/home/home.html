@@ -12,7 +12,7 @@
   />
 
   <div class="home-links">
-    <a routerLink="/items" class="home-btn">Browse Items</a>
+    <a *ngIf="(currentUser$ | async)" routerLink="/items" class="home-btn">Browse Items</a>
     <a routerLink="/login" class="home-btn secondary">Login</a>
   </div>
 </div>

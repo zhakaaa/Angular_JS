@@ -1,9 +1,14 @@
 export interface Item {
-  id: number;
+  id: string;
   title: string;
-  description: string;
-  thumbnail: string;
-  price: number;
-  rating: number;
-  category: string;
+  year: string;
+  type: string;
+  poster: string;
+
+  plot?: string;
+  genre?: string;
+  director?: number;
+  actors?: number;
+  imdbRating?: string;
+  runtime?: string;
 }
