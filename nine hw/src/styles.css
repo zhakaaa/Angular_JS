@@ -1,0 +1,23 @@
+/* Сбрасываем отступы и выравниваем box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Чтобы ссылки по умолчанию не были синими подчёркнутыми */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Чтобы кнопки выглядели аккуратно */
+button {
+  font-family: inherit;
+}

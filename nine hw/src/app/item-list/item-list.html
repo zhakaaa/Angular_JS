@@ -1,0 +1,49 @@
+
+<h1 *ngIf="!(currentUser$ | async)">You need to log in </h1>
+<div *ngIf="(currentUser$ | async)" class="items-page">
+  <h1>Browse Items</h1>
+
+  <form class="search-bar" (ngSubmit)="onSearch()">
+    <input
+      type="text"
+      name="q"
+      [(ngModel)]="query"
+      (ngModelChange)="onSearchChange($event)"
+      placeholder="Search items..."
+    />
+    <button type="submit">Search</button>
+  </form>
+
+  <div *ngIf="loading$" class="state state-loading">
+
+  </div>
+
+  <div *ngIf="error$" class="state state-error">
+    {{error$}}
+  </div>
+
+  <div *ngIf="(currentUser$ | async) && !(loading$ | async) && !(error$ | async) && (items$ | async)?.length == 0"
+    class="state state-empty">
+  </div>
+
+
+  <div *ngIf="!(loading$ | async) && !(error$ | async); else loadingOrError">
+    <div *ngIf="(items$ | async) as items; else noItems">
+      <div *ngIf="items.length > 0; else noItems">
+        <div class="items-grid">
+          <app-item-card *ngFor="let item of items" [item]="item"></app-item-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loadingOrError>
+    <div *ngIf="(loading$ | async)">Loading...</div>
+    <div *ngIf="(error$ | async)">Error occurred. Please try again later.</div>
+  </ng-template>
+
+  <ng-template #noItems>
+    <div>No items found.</div>
+  </ng-template>
+
+</div>
