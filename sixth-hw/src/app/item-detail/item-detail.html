@@ -1,0 +1,66 @@
+<div class="item-details-page">
+  <button class="back-btn" type="button" (click)="goBack()">
+    ← Back
+  </button>
+
+  <div *ngIf="loading" class="state state-loading">
+    Loading item details...
+  </div>
+
+  <div *ngIf="error" class="state state-error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="notFound" class="state state-notfound">
+    Movie not found.
+  </div>
+
+  <div
+    *ngIf="!loading && !error && !notFound && item"
+    class="item-details"
+  >
+    <div class="item-image-wrapper">
+      <img
+        [src]="item.poster && item.poster !== 'N/A' ? item.poster : 'https://via.placeholder.com/400x600?text=No+Image'"
+        [alt]="item.title"
+        class="item-image"  />
+<!--        [src]="item.thumbnail"-->
+<!--        [alt]="item.title"-->
+<!--        class="item-image"-->
+
+    </div>
+
+    <div class="item-info">
+      <h1>{{ item.title }}</h1>
+
+      <p class="item-subtitle">
+        {{ item.year }} • {{ item.type | titlecase }} •
+        <span *ngIf="item.runtime">{{ item.runtime }}</span>
+      </p>
+
+      <p class="item-genre" *ngIf="item.genre">
+        <strong>Genre:</strong> {{ item.genre }}
+      </p>
+
+      <p class="item-description" *ngIf="item.plot">
+        {{ item.plot }}
+      </p>
+
+
+      <!--      <p class="item-description">-->
+<!--        {{ item.description }}-->
+<!--      </p>-->
+
+      <div class="item-meta">
+        <p *ngIf="item.director"><strong>Director:</strong> {{ item.director }}</p>
+        <p *ngIf="item.actors"><strong>Actors:</strong> {{ item.actors }}</p>
+        <p *ngIf="item.imdbRating">  <strong>IMDb Rating:</strong> ⭐ {{ item.imdbRating }} </p>
+
+<!--        <p><strong>ID:</strong> {{ item.id }}</p>-->
+<!--        <p><strong>Category:</strong> {{ item.category }}</p>-->
+<!--        <p><strong>Price:</strong> ${{ item.price }}</p>-->
+<!--        <p><strong>Rating:</strong> ⭐ {{ item.rating }}</p>-->
+      </div>
+    </div>
+  </div>
+</div>
