@@ -1,0 +1,18 @@
+<div class="home-page">
+  <h1>Welcome to {{ appName }}</h1>
+
+  <p class="subtitle">
+    {{ subtitle }}
+  </p>
+
+  <img
+    class="hero-image"
+    src="data:image/png;base64,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"
+    alt="Movie banner"
+  />
+
+  <div class="home-links">
+    <a *ngIf="(currentUser$ | async)" routerLink="/items" class="home-btn">Browse Items</a>
+    <a routerLink="/login" class="home-btn secondary">Login</a>
+  </div>
+</div>
