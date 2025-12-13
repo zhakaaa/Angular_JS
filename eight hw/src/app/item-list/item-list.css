@@ -1,0 +1,57 @@
+.items-page {
+  padding: 24px;
+  color: #fff;
+  background-color: #000;
+  min-height: calc(100vh - 56px); /* минус navbar */
+}
+
+.items-page h1 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.state {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.state-loading {
+  color: #ccc;
+}
+
+.state-error {
+  color: #ff6b6b;
+}
+
+.state-empty {
+  color: #999;
+}
+
+.items-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}

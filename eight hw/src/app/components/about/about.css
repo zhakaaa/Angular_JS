@@ -1,0 +1,14 @@
+.about-page {
+  padding: 40px;
+  color: #fff;
+  background: #000;
+}
+
+.about-page h1 {
+  margin-bottom: 16px;
+}
+
+.about-page ul {
+  margin: 12px 0 16px;
+  padding-left: 20px;
+}

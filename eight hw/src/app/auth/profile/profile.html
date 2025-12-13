@@ -1,0 +1,25 @@
+<div class="profile-page">
+  <div *ngIf="loading" class="state">
+    Loading profile...
+  </div>
+
+  <div *ngIf="!loading && error" class="state error">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error && user" class="profile-card">
+    <h1>Your Profile</h1>
+
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>UID:</strong> {{ user.uid }}</p>
+
+    <button
+      type="button"
+      class="logout-btn"
+      (click)="onLogout()"
+      [disabled]="logoutLoading"
+    >
+      {{ logoutLoading ? 'Logging out...' : 'Logout' }}
+    </button>
+  </div>
+</div>
