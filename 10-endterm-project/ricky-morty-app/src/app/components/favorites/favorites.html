@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="header">
+    <h2>⭐ My Favorite Characters</h2>
+    @if (!isLoading && favorites.length > 0) {
+      <button
+        (click)="clearAllFavorites()"
+        class="btn-clear-all"
+        >
+        🗑️ Clear All
+      </button>
+    }
+  </div>
+
+  <!-- Статус -->
+  <div class="status-message">
+    <span class="status-icon">💾</span>
+    Your favorites are saved locally in your browser
+  </div>
+
+  <!-- Загрузка -->
+  @if (isLoading) {
+    <div class="loading-message">
+      <div class="spinner"></div>
+      <p>Loading favorites...</p>
+    </div>
+  }
+
+  <!-- Пустое состояние -->
+  @if (!isLoading && favorites.length === 0) {
+    <div class="empty-message">
+      <span class="empty-icon">📭</span>
+      <h3>No favorites yet</h3>
+      <p>Start exploring characters and add them to your favorites!</p>
+      <a routerLink="/characters" class="btn-browse">Browse Characters</a>
+    </div>
+  }
+
+  <!-- Сетка избранных (КАК В ITEM-LIST) -->
+  @if (!isLoading && favorites.length > 0) {
+    <div class="grid">
+      @for (char of favorites; track char) {
+        <div
+          class="card"
+          [routerLink]="['/characters', char.id]"
+          >
+          <img [src]="char.image" [alt]="char.name">
+          <div class="card-content">
+            <h3>{{ char.name }}</h3>
+            <p class="info">{{ char.species }} - {{ char.status }}</p>
+            <button
+              (click)="removeFromFavorites(char.id, $event)"
+              class="btn-remove"
+              >
+              ❌ Remove
+            </button>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <!-- Счетчик -->
+  @if (!isLoading && favorites.length > 0) {
+    <div class="counter">
+      Total favorites: <strong>{{ favorites.length }}</strong>
+    </div>
+  }
+</div>
